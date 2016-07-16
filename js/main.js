@@ -36,6 +36,41 @@ $(document).ready(function(){
 	
 })
 $(document).ready(function(){
+	$('.a1').click(function(){
+		//es redireccionar
+		//window.location.href = "comedia.html";
+	   console.log("a1")
+	})
+	$('.a2').click(function(){
+		console.log("a2")
+	})
+	$('.a3').click(function(){
+		console.log("a3")
+	})
+	$('.a4').click(function(){
+		console.log("a4")
+	})
+	$('.a5').click(function(){
+		console.log("a5")
+	})
+	$('.a6').click(function(){
+		console.log("a6")
+	})
+	$('.c1').click(function(){
+		//es redireccionar
+		//window.location.href = "accion.html";
+	   console.log("c1")
+	})
+	$('.c2').click(function(){
+		console.log("c2")
+	})
+	$('.c3').click(function(){
+		console.log("c3")
+	})
+	$('.c4').click(function(){
+		console.log("c4")
+	})
+
 	$('i').click(function(){
 		window.location.href = "index.html";
 	})
