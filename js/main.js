@@ -15,6 +15,7 @@ $(document).ready(function(){
 		}
 		if(lista == "Acción"){
 			$('.comedia').add('.familiar').add('.terror').add('.criminal').hide()
+			$('.accion').show()
 		}
 		if(lista == "Comedia"){
 			$('.accion').add('.familiar').add('.terror').add('.criminal').hide()
