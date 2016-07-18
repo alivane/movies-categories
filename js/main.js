@@ -3,10 +3,8 @@
 //si el li es n mostrar todos los n images
 
 //ordenar las imagenes por columnas
-
-
-
 $(document).ready(function(){
+	hideDescription();
 	$('li').on('click',function(){
 		var lista = $(this).text();
 		$('button').text(lista);
@@ -36,43 +34,175 @@ $(document).ready(function(){
 	})
 	
 })
+function hide (){
+    $('header h1').remove();
+    $('.cuadro').hide()
+    $('header .container').html('<h1>CINE ALIVANE <i class="fa fa-times" aria-hidden="true"></i></h1>');
+	$('.movies').hide();
+	$('i').click(function(){
+		hideDescription()
+		$('header .container').html('<h1> CINE ALIVANE </h1>');
+		$('.movies').show();
+		$('.cuadro').show();
+	})
+}
+function hideDescription(){
+	$('.descriptionAccion').add('.descriptionComedia').add('.descriptionCrimen').add('.descriptionFamiliar').add('.descriptionTerror').hide();
+}
+
 $(document).ready(function(){
 	$('.a1').click(function(){
-		//es redireccionar
-		//window.location.href = "comedia.html";
-	   console.log("a1")
+	   $('.descriptionAccion').show();
+	   $('.insurgente').add('.central').add('.egipto').add('.independencia').add('.tarzan').hide()
+	   $('.anillo').show();
+		hide();
 	})
 	$('.a2').click(function(){
-		console.log("a2")
+		$('.descriptionAccion').show();
+	    $('.anillo').add('.central').add('.egipto').add('.independencia').add('.tarzan').hide()
+	    $('.insurgente').show();
+		hide();
 	})
 	$('.a3').click(function(){
-		console.log("a3")
+		$('.descriptionAccion').show();
+	    $('.anillo').add('.insurgente').add('.egipto').add('.independencia').add('.tarzan').hide()
+	    $('.central').show();
+		hide();
 	})
 	$('.a4').click(function(){
-		console.log("a4")
+		$('.descriptionAccion').show();
+	    $('.anillo').add('.central').add('.insurgente').add('.independencia').add('.tarzan').hide()
+	    $('.egipto').show();
+		hide();
 	})
 	$('.a5').click(function(){
-		console.log("a5")
+		$('.descriptionAccion').show();
+	    $('.anillo').add('.central').add('.egipto').add('.insurgente').add('.tarzan').hide()
+	    $('.independencia').show();
+		hide();
 	})
 	$('.a6').click(function(){
-		console.log("a6")
+		$('.descriptionAccion').show();
+	    $('.anillo').add('.central').add('.egipto').add('.independencia').add('.insurgente').hide()
+	    $('.tarzan').show();
+		hide();
 	})
+	//comedia
 	$('.c1').click(function(){
-		//es redireccionar
-		//window.location.href = "accion.html";
-	   console.log("c1")
+		$('.descriptionComedia').show();
+	    $('.jump').add('.agente').add('.deadpool').hide()
+	    $('.infiltrados').show();
+		hide();
 	})
 	$('.c2').click(function(){
-		console.log("c2")
+		$('.descriptionComedia').show();
+	    $('.infiltrados').add('.agente').add('.deadpool').hide()
+	    $('.jump').show();
+		hide();
 	})
 	$('.c3').click(function(){
-		console.log("c3")
+		$('.descriptionComedia').show();
+	    $('.jump').add('.infiltrados').add('.deadpool').hide()
+	    $('.agente').show();
+		hide();
 	})
 	$('.c4').click(function(){
-		console.log("c4")
+		$('.descriptionComedia').show();
+	    $('.jump').add('.agente').add('.infiltrados').hide()
+	    $('.deadpool').show();
+		hide();
 	})
-
-	$('i').click(function(){
-		window.location.href = "index.html";
+	//CRIMEN
+	$('.cr1').click(function(){
+		$('.descriptionCrimen').show();
+	    $('.jeruzalem').add('.criminal').add('.alvin').add('.animal').hide()
+	    $('.london').show();
+		hide();
+	})
+	$('.cr2').click(function(){
+		$('.descriptionCrimen').show();
+	    $('.london').add('.criminal').add('.alvin').add('.animal').hide()
+	    $('.jeruzalem').show();
+		hide();
+	})
+	$('.cr3').click(function(){
+		$('.descriptionCrimen').show();
+	    $('.jeruzalem').add('.london').add('.alvin').add('.animal').hide()
+	    $('.criminal').show();
+		hide();
+	})
+	$('.cr4').click(function(){
+		$('.descriptionCrimen').show();
+	    $('.jeruzalem').add('.criminal').add('.london').add('.animal').hide()
+	    $('.alvin').show();
+		hide();
+	})
+	$('.cr1').click(function(){
+		$('.descriptionCrimen').show();
+	    $('.jeruzalem').add('.criminal').add('.alvin').add('.london').hide()
+	    $('.animal').show();
+		hide();
+	})
+	//FAMILIAR
+	$('.t1').click(function(){
+		$('.descriptionFamiliar').show();
+	    $('.birds').add('.peluda').add('.heidi').add('.oddball').add('.gigantes').hide()
+	    $('.guardianes').show();
+		hide();
+	})
+	$('.f2').click(function(){
+		$('.descriptionFamiliar').show();
+	    $('.guardianes').add('.peluda').add('.heidi').add('.oddball').add('.gigantes').hide()
+	    $('.birds').show();
+		hide();
+	})
+	$('.f3').click(function(){
+		$('.descriptionFamiliar').show();
+	    $('.birds').add('.guardianes').add('.heidi').add('.oddball').add('.gigantes').hide()
+	    $('.peluda').show();
+		hide();
+	})
+	$('.f4').click(function(){
+		$('.descriptionFamiliar').show();
+	    $('.birds').add('.peluda').add('.guardianes').add('.oddball').add('.gigantes').hide()
+	    $('.heidi').show();
+		hide();
+	})
+	$('.f5').click(function(){
+		$('.descriptionFamiliar').show();
+	    $('.birds').add('.peluda').add('.heidi').add('.guardianes').add('.gigantes').hide()
+	    $('.oddball').show();
+		hide();
+	})
+	$('.f6').click(function(){
+		$('.descriptionFamiliar').show();
+	    $('.birds').add('.peluda').add('.heidi').add('.oddball').add('.guardianes').hide()
+	    $('.gigantes').show();
+		hide();
+	})
+	//TERROR
+	$('.t1').click(function(){
+		$('.descriptionTerror').show();
+	    $('.lamal').add('.conjuro').add('.sinestir').hide()
+	    $('.huerfana').show();
+		hide();
+	})
+	$('.t2').click(function(){
+		$('.descriptionTerror').show();
+	    $('.huerfana').add('.conjuro').add('.sinestir').hide()
+	    $('.lamal').show();
+		hide();
+	})
+	$('.t3').click(function(){
+		$('.descriptionTerror').show();
+	    $('.lamal').add('.huerfana').add('.sinestir').hide()
+	    $('.conjuro').show();
+		hide();
+	})
+	$('.t4').click(function(){
+		$('.descriptionTerror').show();
+	    $('.lamal').add('.conjuro').add('.huerfana').hide()
+	    $('.sinestir').show();
+		hide();
 	})
 })
