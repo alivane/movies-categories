@@ -137,7 +137,7 @@ $(document).ready(function(){
 	    $('.alvin').show();
 		hide();
 	})
-	$('.cr1').click(function(){
+	$('.cr5').click(function(){
 		$('.descriptionCrimen').show();
 	    $('.jeruzalem').add('.criminal').add('.alvin').add('.london').hide()
 	    $('.animal').show();
