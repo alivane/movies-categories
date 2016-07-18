@@ -1,7 +1,15 @@
 body{
 	text-align: center;
 }
-img{
+.movies img{
 	width: 80%;
 	height: 400px;
+}
+.imagenes img{
+	width: 90%;
+	height: 200px;
+	border-radius: 100%;
+}
+.imagenes:hover{
+	padding: 20px;
 }
