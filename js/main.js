@@ -115,7 +115,7 @@ $(document).ready(function(){
 	//CRIMEN
 	$('.cr1').click(function(){
 		$('.descriptionCrimen').show();
-	    $('.jeruzalem').add('.criminal').add('.alvin').add('.animal').hide()
+	    $('.jeruzalem').add('.criminal').add('.alvin').add('.animal').hide();
 	    $('.london').show();
 		hide();
 	})
@@ -144,7 +144,7 @@ $(document).ready(function(){
 		hide();
 	})
 	//FAMILIAR
-	$('.t1').click(function(){
+	$('.f1').click(function(){
 		$('.descriptionFamiliar').show();
 	    $('.birds').add('.peluda').add('.heidi').add('.oddball').add('.gigantes').hide()
 	    $('.guardianes').show();
